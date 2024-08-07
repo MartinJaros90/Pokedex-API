@@ -1,0 +1,183 @@
+:root {
+  /* Hintergrundfarben */
+  --background-light-blue: rgba(168, 230, 255, 1);
+  --background-light-green: rgba(167, 243, 165, 1);
+
+  /* Header und Navigation */
+  --header-red: rgba(255, 0, 0, 1);
+  --header-dark-blue: rgba(61, 125, 202, 1);
+
+  /* Buttons und Aktionen */
+  --button-yellow: rgba(255, 221, 87, 1);
+  --button-orange: rgba(255, 153, 51, 1);
+
+  /* Textfarben */  
+  --text-dark-grey: rgba(51, 51, 51, 1);
+  --text-white: rgba(255, 255, 255, 1);
+
+  /* Karten und Boxen */
+  --card-beige: rgba(255, 245, 225, 1);
+  
+  /* Pastellfarben für Pokémon-Typen */
+  --pastel-fire: rgba(238, 129, 48, 1);
+  --pastel-water: rgba(99, 144, 240, 1);
+  --pastel-grass: rgba(122, 199, 76, 1);
+  --pastel-electric: rgba(247, 208, 44, 1);
+  --pastel-psychic: rgba(249, 85, 135, 1);
+
+  /* Spezifische Pokémon-Farben */
+  --pikachu-yellow: rgba(255, 221, 87, 1);
+  --pikachu-black: rgba(0, 0, 0, 1);
+  --bulbasaur-green: rgba(120, 200, 80, 1);
+  --bulbasaur-blue: rgba(168, 230, 255, 1);
+  --charmander-orange: rgba(255, 153, 51, 1);
+  --charmander-red: rgba(255, 0, 0, 1);
+  --squirtle-blue: rgba(104, 144, 240, 1);
+  --squirtle-light-blue: rgba(168, 230, 255, 1);
+}
+
+
+
+.types .bug {
+    background: rgba(140, 178, 48, 1);
+}
+
+.types .dark {
+    background: rgba(88, 87, 95, 1);
+}
+
+.types .dragon {
+    background: rgba(15, 106, 192, 1);
+}
+
+.types .electric {
+    background: rgba(238, 213, 53, 1);
+}
+
+.types .fairy {
+    background: rgba(237, 110, 199, 1);
+}
+
+.types .fighting {
+    background: rgba(208, 65, 100, 1);
+}
+
+.types .fire {
+    background: rgba(253, 125, 36, 1);
+}
+
+.types .flying {
+    background: rgba(116, 143, 201, 1);
+}
+
+.types .ghost {
+    background: rgba(85, 106, 174, 1);
+}
+
+.types .grass {
+    background: rgba(98, 185, 87, 1);
+}
+
+.types .ground {
+    background: rgba(221, 119, 72, 1);
+}
+
+.types .ice {
+    background: rgba(97, 206, 192, 1);
+}
+
+.types .normal {
+    background: rgba(157, 160, 170, 1);
+}
+
+.types .poison {
+    background: rgba(165, 82, 204, 1);
+}
+
+.types .psychic {
+    background: rgba(234, 93, 96, 1);
+}
+
+.types .rock {
+    background: rgba(186, 171, 130, 1);
+}
+
+.types .steel {
+    background: rgba(65, 125, 154, 1);
+}
+
+.types .water {
+    background: rgba(74, 144, 218, 1);
+}
+
+.bug {
+    color: rgba(139, 214, 116, 1);
+}
+
+.dark {
+    color: rgba(117, 116, 126, 1);
+}
+
+.dragon {
+    color: rgba(21, 130, 231, 1);
+}
+
+.electric {
+    color: rgba(242, 203, 85, 1);
+}
+
+.fairy {
+    color: rgba(233, 138, 204, 1);
+}
+
+.fighting {
+    color: rgba(235, 73, 113, 1);
+}
+
+.fire {
+    color: rgba(255, 148, 72, 1);
+}
+
+.flying {
+    color: rgba(130, 158, 219, 1);
+}
+
+.ghost {
+    color: rgba(104, 130, 212, 1);
+}
+
+.grass {
+    color: rgba(139, 190, 138, 1);
+}
+
+.ground {
+    color: rgba(247, 133, 81, 1);
+}
+
+.ice {
+    color: rgba(107, 221, 206, 1);
+}
+
+.normal {
+    color: rgba(197, 201, 214, 1);
+}
+
+.poison {
+    color: rgba(189, 95, 233, 1);
+}
+
+.psychic {
+    color: rgba(255, 120, 122, 1);
+}
+
+.rock {
+    color: rgba(213, 200, 149, 1);
+}
+
+.steel {
+    color: rgba(77, 146, 180, 1);
+}
+
+.water {
+    color: rgba(88, 171, 246, 1);
+}

@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}

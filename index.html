@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/pokeball.svg">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <form id="name-search-form">
+            <input type="text" id="search-name" name="search" placeholder="Find Pokémon…" minlength="3" required>
+            <button type="submit" id="search-btn">Search</button>
+        </form>
+
+        <h1 class="header"><img class="header-img" src="./assets/img/logo-pokedex.svg" alt=""></h1>
+
+        <div id="dialog" class="dialog-bg d-none">
+            <div class="dialog">
+                <button id="close-dialog-btn" class="close-dialog-btn"></button>
+                <p id="dialog-message"></p>
+                <div id="data-container"></div>
+                <div class="arrow-nxt-bck">
+                    <img id="arrow-left" class="arrow-left" data-index="-1" src="./assets/icons/arrow-left.png"
+                        alt="arrow-left">
+                    <img id="arrow-right" class="arrow-right" data-index="1" src="./assets/icons/arrow-right.png"
+                        alt="arrow-right">
+                </div>
+            </div>
+        </div>
+
+        <div class="pokemon-container" id="pokemon-container"></div>
+
+        <div class="loading-container" id="loading-container" style="display: none;">
+            <img class="spinner" src="./assets/icons/pokeball.svg" alt="Loading...">
+        </div>
+
+        <div class="buttons">
+            <button id="prev-page-btn" disabled>&lt; Previous Page</button>
+            <button id="load-more-btn">Load More Pokémon &gt;</button>
+        </div>
+
+        <div id="arrowToTop">
+            <a href="#"><img src="./assets/icons/up-button.png"></a>
+        </div>
+
+        <script type="module" src="./script.js"></script>
+        <script type="module" src="./scripts/typeMappings.js"></script>
+    </div>
+
+</body>
+
+</html>

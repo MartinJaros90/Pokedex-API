@@ -1,0 +1,47 @@
+@media(max-width: 500px) {
+    form {
+        width: 80vw;
+    }
+
+    .header-img {
+        width: 80vw;
+    }
+
+    .pokemon-card {
+        width: 70vw;
+    }
+
+    .dialog {
+        width: 80vw;
+    }
+
+    .current-pokemon {
+        width: 80vw;
+    }
+
+    .current-pokemon h1 {
+        font-size: 24px;
+    }
+
+    .pokeball-dialog {
+        width: 24px;
+        height: 24px;
+    }
+
+    .dialog-btns button {
+        padding: 8px 4px;
+    }
+
+    .data-container {
+        padding: 8px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #load-more-btn, #prev-page-btn {
+        margin: 20px 20px;
+    }
+}

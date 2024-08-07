@@ -1,0 +1,347 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-light-blue);
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-image: url(./assets/img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img {
+    width: 420px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Types Bar */
+.types-bar {
+    display: flex;
+    width: 50%;
+    padding: 15px 2vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 80px;
+    gap: 10px;
+    background: #eef5fd61;
+    border-radius: 10vw;
+    box-shadow: 0 0 12px 5px var(--header-dark-blue);
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.types-bar a {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    padding: 1.5vw;
+    cursor: pointer;
+    border-radius: 100%;
+    background: currentColor;
+    transition: transform 0.3s;
+}
+
+.types-bar img {
+    width: 32px;
+    height: 32px;
+}
+
+.types-bar a:hover {
+    transform: scale(1.2);
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.pokemon-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw 4.5vw;
+    width: 400px;
+    height: 380px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: lightgray;
+    transition: transform .2s;
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-card div {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.types img {
+    width: 20px;
+    height: 20px;
+}
+
+.pokemon-image {
+    width: 100px;
+    height: 100px;
+}
+
+.id-number {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--text-dark-grey);
+}
+
+.pokemon-image {
+    height: 150px;
+    width: 150px;
+}
+
+.type-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.loading {
+    font-size: 80px;
+}
+
+.current-pokemon {
+    background-color: rgba(122, 199, 76, 1);
+    margin: 0;
+    border-radius: 24px;
+    margin-bottom: 32px;
+    width: 480px;
+    padding: 16px;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.dialog {
+    position: relative;
+    height: 650px;
+    width: 480px;
+    background-color: var(--card-beige);
+    color: var(--text-dark-grey);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    
+}
+
+.d-none {
+    display: none;
+}
+
+.dialog-closing .dialog {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.dialog-closing .dialog-bg {
+    opacity: 0;
+}
+
+.category {
+    font-weight: bold;
+}
+
+.stats-container {
+    width: 100%;
+}
+
+.category {
+    font-weight: bold;
+    text-align: start;
+}
+
+.stats-number {
+    width: 100px;
+    text-align: start;
+    padding-right: 10px;
+    padding-left: 80px;
+}
+
+.progress-bar {
+    width: 40%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.bar {
+    height: 24px;
+    background-color: #4CAF50;
+    border-radius: 5px 0 0 5px; 
+    width: 0%; 
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    transition: width 0.3s ease; 
+}
+
+.evolution-stage {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.evolution-stage img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.evolution-stage span {
+    font-size: 1.2em;
+}
+
+#arrowToTop {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    background-color: var(--header-dark-blue);
+    border-radius: 50%; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+#arrowToTop img {
+    width: 40px; 
+    height: 40px; 
+    display: block;
+    margin: auto;
+}
+
+#arrowToTop:hover {
+    background-color: var(--button-yellow); 
+    transform: scale(1.1); 
+}
+
+#arrowToTop:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px var(--button-yellow); 
+}
+
+.arrow-nxt-bck {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrow-nxt-bck img {
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-yellow);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.arrow-nxt-bck img:hover {
+    background-color: var(--button-orange);
+    transform: scale(1.1);
+}
+
+.arrow-left {
+    margin-left: 16px;
+}
+
+.arrow-right {
+    margin-right: 16px;
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: var(--text-dark-grey);
+    color: var(--background-light-blue);
+}
+
+body.dark-mode .pokemon-card {
+    background-color: var(--text-dark-grey);
+    color: var(--text-white);
+}
+
+body.dark-mode .dialog {
+    background-color: var(--header-dark-blue);
+    color: var(--text-white);
+}
+
+body.dark-mode #arrowToTop {
+    background-color: var(--button-orange);
+}
+
+body.dark-mode #arrowToTop:hover {
+    background-color: var(--button-yellow);
+}
